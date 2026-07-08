@@ -9,8 +9,7 @@
   font-size: 30px;}
         body { background-color: black;}
 
-
- nav{ margin: 0;
+nav{ margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
@@ -36,22 +35,17 @@
   list-style: none; }
 .nav-links li a {
   display: block;
-  color: #f2f2f2;
+  color: #c1b6ff;
   text-align: center;
   padding: 10px 15px;
   text-decoration: none; 
-  font-size: 16px;
+  font-size: 50px;
   transition: 0.3s ease;
 }
 
 .nav-links li a:hover {
-  background-color: #555;
+  background-color: hsl(203, 100%, 86%);
   color: #fff;
   border-radius: 4px;
 }
 
-.nav-links li a.active {
-  background-color: #04AA6D;
-  color: white;
-  border-radius: 4px;
-}
