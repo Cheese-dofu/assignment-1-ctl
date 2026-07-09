@@ -12,15 +12,6 @@
   max-width: 50%;
   height: auto;
 }
-
-/* Reset default list padding and margins */
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 15px; /* Space between boxes */
-  padding: 0;
-  margin: 0;
-}
 nav{ margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -46,7 +37,7 @@ nav{ margin: 0;
   list-style: none; }
 .nav-links li a {
   display: block;
-  color: #000000;
+  color: #f3b7ff;
   text-align: center;
   padding: 10px 15px;
   text-decoration: none; 
@@ -55,7 +46,13 @@ nav{ margin: 0;
 }
 
 .nav-links li a:hover {
-  background-color: hsl(0, 0%, 0%);
-  color: #a6fbff;
+  background-color: #f3b7ff;
+  color: #000000;
+  border-radius: 4px;
+}
+
+.nav-links li a:hover {
+  background-color: #f3b7ff);
+  color:#f3b7ff;
   border-radius: 4px;
 }
