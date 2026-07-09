@@ -9,7 +9,7 @@
   font-size: 30px;}
         body { background-color: rgb(255, 207, 249);}
   img {
-  max-width: 50%;
+  max-width: 75%;
   height: auto;
 }
 
@@ -52,3 +52,17 @@ nav{ margin: 0;
   border-radius: 4px;
 }
 
+img:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+
+}
+.navbar {
+  outline: 2px solid #2be3ff;
+}
+.navbar {
+  box-shadow: 0px 4px 10px #2be3ff;
+}
+.navbar {
+  border-bottom: 2px solid #2be3ff;
+}
