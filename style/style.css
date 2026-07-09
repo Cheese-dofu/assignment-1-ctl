@@ -13,57 +13,44 @@
   height: auto;
 }
 
-nav{ margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-        }
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #e2a7ff;
-  padding: 15px 30px;
-}
-
-/* Brand logo styling */
-.nav-logo {
-  color: #000000;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-
+/* Reset default list padding and margins */
 .nav-links {
+  list-style: none;
   display: flex;
-  list-style: none; }
-.nav-links li a {
-  display: block;
-  color: #c1b6ff;
-  text-align: center;
-  padding: 10px 15px;
-  text-decoration: none; 
-  font-size: 50px;
-  transition: 0.3s ease;
+  gap: 15px; /* Space between boxes */
+  padding: 0;
+  margin: 0;
 }
 
-.nav-links li a:hover {
-  background-color: hsl(203, 100%, 86%);
-  color: #000000;
-  border-radius: 4px;
+/* Create the individual boxes */
+.nav-links li {
+  background-color: #f0f0f0; /* Box background color */
+  border: 1px solid #ccc; /* Box border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px 20px; /* Space inside the box */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Style the links themselves */
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: block; /* Makes the whole box clickable */
+}
+
+/* Add a cool hover effect */
+.nav-links li:hover {
+  background-color: #007bff;
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.nav-links li:hover a {
+  color: white;
 }
 
 img:hover{
   transform: scale(1.1);
   transition: transform 0.3s ease;
 
-}
-.navbar {
-  outline: 2px solid #2be3ff;
-}
-.navbar {
-  box-shadow: 0px 4px 10px #2be3ff;
-}
-.navbar {
-  border-bottom: 2px solid #2be3ff;
 }
