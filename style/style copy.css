@@ -1,13 +1,13 @@
-       h1 { color:rgb(0, 0, 0); 
+       h1 { color:rgb(168, 232, 255); 
   font-family: 'comic sans ms';
   font-size: 50px;}
-        h2 { color:rgb(0, 0, 0);
+        h2 { color:rgb(175, 199, 255);
          font-family: 'comic sans ms';
   font-size: 30px;}
-        li { color:rgb(1, 1, 1);
+        li { color:rgb(164, 191, 255);
          font-family: 'comic sans ms';
   font-size: 30px;}
-        body { background-color: rgb(255, 207, 249);}
+        body { background-color: rgb(0, 0, 0);}
   img {
   max-width: 75%;
   height: auto;
