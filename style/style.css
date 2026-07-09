@@ -8,6 +8,10 @@
          font-family: 'comic sans ms';
   font-size: 30px;}
         body { background-color: black;}
+        img {
+  max-width: 50%;
+  height: auto;
+}
 
 nav{ margin: 0;
   padding: 0;
