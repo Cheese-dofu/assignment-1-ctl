@@ -1,13 +1,13 @@
-       h1 { color:lightblue; 
+       h1 { color:rgb(0, 0, 0); 
   font-family: 'comic sans ms';
   font-size: 50px;}
-        h2 { color:lightpink;
+        h2 { color:rgb(0, 0, 0);
          font-family: 'comic sans ms';
   font-size: 30px;}
-        li { color:lightcyan;
+        li { color:rgb(1, 1, 1);
          font-family: 'comic sans ms';
   font-size: 30px;}
-        body { background-color: black;}
+        body { background-color: rgb(255, 207, 249);}
 
 nav{ margin: 0;
   padding: 0;
@@ -18,13 +18,13 @@ nav{ margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #e2a7ff;
+  background-color: #000000;
   padding: 15px 30px;
 }
 
 /* Brand logo styling */
 .nav-logo {
-  color: #000000;
+  color: #b6eeff;
   font-size: 24px;
   font-weight: bold;
 }
@@ -35,7 +35,7 @@ nav{ margin: 0;
   list-style: none; }
 .nav-links li a {
   display: block;
-  color: #c1b6ff;
+  color: #000000;
   text-align: center;
   padding: 10px 15px;
   text-decoration: none; 
@@ -44,8 +44,8 @@ nav{ margin: 0;
 }
 
 .nav-links li a:hover {
-  background-color: hsl(203, 100%, 86%);
-  color: #000000;
+  background-color: hsl(0, 0%, 0%);
+  color: #a6fbff;
   border-radius: 4px;
 }
 
