@@ -21,6 +21,22 @@
 
 </head>
 <body>
+    <h1>Current Time</h1>
+<p id="clock"></p>
+
+<script>
+function updateTime() {
+    const now = new Date();
+    document.getElementById("clock").textContent = now.toLocaleTimeString();
+}
+
+// Update immediately
+updateTime();
+
+// Update every second
+setInterval(updateTime, 1000);
+</script>
+
 
 <h1> This is a page is dedicated to Unicorns(and my cat cuz i felt like adding her)</h1>
 <a href="https://en.wikipedia.org/wiki/Unicorn"><img alt="picture of unicorn(from hsr)" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT15kYc6zEdscqjZG1oU_etjrX0n8mrUS-UdWpB1VwzyA&s=10">
