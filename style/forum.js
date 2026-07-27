@@ -1,7 +1,7 @@
 app.post("/post", (req, res) => {
     const message = req.body.message;
 
-    // Save "message" to your database
+    // Save the message to a database
 
     res.redirect("/");
 });
