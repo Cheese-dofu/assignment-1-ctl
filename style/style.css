@@ -8,6 +8,9 @@
          font-family: 'comic sans ms';
   font-size: 30px;}
         body { background-color: black;}
+        h3 { color:rgb(229, 182, 255);
+         font-family: 'comic sans ms';
+  font-size: 30px;}
       
 nav{ margin: 0;
   padding: 0;
@@ -62,3 +65,44 @@ img:hover{
 .navbar {
   border-bottom: 2px solid #2be3ff;
 }
+
+
+.styled-table {
+      border-collapse: collapse; /* Merges double borders into a clean single line */
+      margin: 25px 0;
+      font-size: 0.9em;
+      min-width: 400px;
+      box-shadow: 0 0 20px white;
+      border-radius: 5px 5px 0 0;
+      overflow: hidden; /* Ensures border-radius applies to header backgrounds */
+    }
+
+    /* Table header styling */
+    .styled-table thead tr {
+      background-color: #000000;
+      color: #ffffff;
+      text-align: left;
+    }
+
+    /* Content padding for clean breathing room */
+    .styled-table th,
+    .styled-table td {
+      padding: 12px 15px;
+    }
+
+    /* Zebra striping for improved scanning readability */
+    .styled-table tbody tr:nth-child(even) {
+      background-color: #0f0f0f;
+    }
+
+    /* Bottom border highlight for the final row */
+    .styled-table tbody tr:last-of-type {
+      border-bottom: 2px solid #ffffff;
+    }
+
+    /* Visual feedback on row hover */
+    .styled-table tbody tr:hover {
+      background-color: #040404;
+    }
+
+
