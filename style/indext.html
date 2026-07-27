@@ -33,25 +33,25 @@ setInterval(updateTime, 1000);
 </script>
 
    
-       <!DOCTYPE html>
-<html>
-<head>
-    <title>Shared Message Board</title>
-</head>
-<body>
+<h2>Private Notes</h2>
 
-<h2>Message Board</h2>
+<textarea id="note" rows="8" cols="50" placeholder="Write your note here..."></textarea>
+<br><br>
 
-<form action="/post" method="POST">
-    <textarea name="message" rows="5" cols="40" required></textarea>
-    <br><br>
-    <button type="submit">Post</button>
-</form>
+<button onclick="saveNote()">Save</button>
 
-<h3>Messages</h3>
-<div id="messages">
-    <!-- Messages from the server go here -->
-</div>
+<script>
+const note = document.getElementById("note");
+
+// Load saved note when the page opens
+note.value = localStorage.getItem("myPrivateNote") || "";
+
+// Save the note
+function saveNote() {
+    localStorage.setItem("myPrivateNote", note.value);
+    alert("Note saved!");
+}
+</script>
 
 </body>
 </html>
