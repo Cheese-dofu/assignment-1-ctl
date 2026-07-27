@@ -17,34 +17,52 @@
     <title>Unicorn</title>
     <link rel="stylesheet" href="../style copy.css"></link>
     
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
 
+        textarea {
+            width: 100%;
+            max-width: 600px;
+            height: 200px;
+        }
 
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Current Time</h1>
-<p id="clock"></p>
+
+<h1>How Do you feel about Ai,or Ai are type how you feel below</h1>
+
+<textarea id="notes" placeholder="Write your private notes here..."></textarea>
+<br>
+<button onclick="saveNotes()">Save Notes</button>
+
+<p id="status"></p>
 
 <script>
-function updateTime() {
-    const now = new Date();
-    document.getElementById("clock").textContent = now.toLocaleTimeString();
+const notes = document.getElementById("notes");
+const status = document.getElementById("status");
+
+// Load saved notes when the page opens
+window.onload = function () {
+    const saved = localStorage.getItem("privateNotes");
+    if (saved) {
+        notes.value = saved;
+    }
+};
+
+// Save notes
+function saveNotes() {
+    localStorage.setItem("privateNotes", notes.value);
+    status.textContent = "Notes saved!";
 }
-
-// Update immediately
-updateTime();
-
-// Update every second
-setInterval(updateTime, 1000);
 </script>
 
-
-<h1> This is a page is dedicated to Unicorns(and my cat cuz i felt like adding her)</h1>
-<a href="https://en.wikipedia.org/wiki/Unicorn"><img alt="picture of unicorn(from hsr)" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT15kYc6zEdscqjZG1oU_etjrX0n8mrUS-UdWpB1VwzyA&s=10">
-<h2> Why I chose unicorn</h2></a>
-
-<ol> 
-    <li>They r so pretty</li>
-    <li> they are so cute</li>
-    
 </body>
 </html>
