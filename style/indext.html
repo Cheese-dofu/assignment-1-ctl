@@ -12,6 +12,8 @@
     </ul>
     </nav>
     <meta charset="utf/8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="style.css"></link>
     
  </head>
@@ -24,23 +26,42 @@
    <h2> A little about why I made this website,it's because I am intrested and invested in these topics and I think these topics are really cool and important to be aware and talk about
    </h2>
  <style>
-    body{margin: 0;
-    overflow:hidden;}
-    .unicorn { position:absolute;
-        width: 150px;
-        bottom:15px;
-        left:-160;
-        animation: run 8s linear infinte;
+    body {
+        margin: 0;
+        overflow: hidden;
+        background: linear-gradient(to right, #87CEEB, #E0FFFF);
+        height: 100vh;
+    }
 
+    .unicorn {
+        position: absolute;
+        top: 50%;
+        font-size: 80px;
+        animation: run 6s linear infinite;
+        transform: translateY(-50%);
     }
-    @keyframes run{
-        0%{
-            left: -160;
-        
+
+    @keyframes run {
+        0% {
+            left: -120px;
+            transform: translateY(-50%) scaleX(1);
         }
-        100%{ left: calc(100vw + 160px);}
+        49% {
+            transform: translateY(-50%) scaleX(1);
+        }
+        50% {
+            left: calc(100% + 120px);
+            transform: translateY(-50%) scaleX(-1);
+        }
+        99% {
+            transform: translateY(-50%) scaleX(-1);
+        }
+        100% {
+            left: -120px;
+            transform: translateY(-50%) scaleX(1);
+        }
     }
- </style>
+</style>
   <img src="https://media.tenor.com/xq2Z_Df0powAAAAM/my-little-pony-pink-fluffy-unicorns.gif" class="unicorn" alt="running unicorn">
   
 </body>
