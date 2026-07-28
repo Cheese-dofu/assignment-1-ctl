@@ -138,6 +138,6 @@ img:hover{
 .grid-container {
   display: grid; /* Activates the grid layout context */
   grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
-  grid-template-rows: auto; /* Rows scale automatically based on content */
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto; /* Rows scale automatically based on content */
   gap: 20px; /* Adds 20px spacing between all rows and columns */
 }
