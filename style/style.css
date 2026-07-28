@@ -128,8 +128,8 @@ img:hover{
 
 
 .collage-item img {
-  width: 1000%;
-  height: 1000%;
+  width: 300%;
+  height: 300%;
   object-fit: cover; /* Prevents image distortion */
   border-radius: 8px;
   transition: transform 0.3s ease;
