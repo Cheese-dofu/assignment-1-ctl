@@ -132,7 +132,7 @@ img:hover{
   grid-auto-rows: 50px;
   gap: 20px; /* Spacing between photos */
   padding: 10px;
-  max-width: q00px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -152,14 +152,14 @@ img:hover{
 
 /* Layout definitions using grid spanning */
 .large-rect {
-  grid-column: span 2;
-  grid-row: span 2;
+  grid-column: span 3;
+  grid-row: span 3;
 }
 
 .vertical-tall {
-  grid-row: span 2;
+  grid-row: span 3;
 }
 
 .horizontal-wide {
-  grid-column: span 2;
+  grid-column: span 3;
 }
