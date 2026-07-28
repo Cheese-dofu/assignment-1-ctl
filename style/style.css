@@ -72,47 +72,11 @@ img:hover{
   border-bottom: 2px solid #2be3ff;
 }
 
+tr{
+	background-color: white;
+}
 
-.styled-table {
-      border-collapse: collapse; /* Merges double borders into a clean single line */
-      margin: 25px 0;
-      font-size: 0.9em;
-      min-width: 400px;
-      box-shadow: 0 0 20px white;
-      border-radius: 5px 5px 0 0;
-      overflow: hidden; /* Ensures border-radius applies to header backgrounds */
-    }
-
-    /* Table header styling */
-    .styled-table thead tr {
-      background-color: #fefafa;
-      color: #ffffff;
-      text-align: left;
-    }
-
-    /* Content padding for clean breathing room */
-    .styled-table th,
-    .styled-table td {
-      padding: 12px 15px;
-    }
-
-    /* Zebra striping for improved scanning readability */
-    .styled-table tbody tr:nth-child(even) {
-      background-color: #fbf5f5;
-    }
-
-    /* Bottom border highlight for the final row */
-    .styled-table tbody tr:last-of-type {
-      border-bottom: 2px solid #ffffff;
-    }
-
-    /* Visual feedback on row hover */
-    .styled-table tbody tr:hover {
-      background-color: #f2eeee;
-      th { color:lightblue; 
-  font-family: 'comic sans ms';
-  font-size: 50px;}
-    }
+  
    p { color:lightblue; 
   font-family: 'comic sans ms';
   font-size: 50px;}

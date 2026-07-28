@@ -12,39 +12,15 @@
            
         </ul>
     </nav>
-   <title> Ai Art vs Human Art</title>
+   <title> drawing app<3</title>
     <link rel="stylesheet" href="../style.css"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     
       
 </head>
 <body>
 
-<div class="container">
-    <label for="answerField">Type your answer:</label>
-    <!-- 1. The HTML Text Box -->
-    <input type="text" id="answerField" placeholder="Your answer will be saved...">
-    
-    <!-- 2. The Save Button -->
-    <button onclick="saveAnswer()">Save Answer</button>
-</div>
-
-<script>
-    // 3. Load the saved answer when the page opens
-    window.onload = function() {
-        const savedValue = localStorage.getItem("userAnswer");
-        if (savedValue) {
-            document.getElementById("answerField").value = savedValue;
-        }
-    };
-
-    // 4. Save the answer to the browser's memory
-    function saveAnswer() {
-        const inputField = document.getElementById("answerField");
-        localStorage.setItem("userAnswer", inputField.value);
-        alert("Answer saved successfully!");
-        
-    }
-</script>
 
 
 </body>
