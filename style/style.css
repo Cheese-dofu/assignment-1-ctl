@@ -11,7 +11,8 @@
         h3 { color:rgb(229, 182, 255);
          font-family: 'comic sans ms';
   font-size: 30px;}
-      
+  img {max-width: 500px;
+  }
 nav{ margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -106,6 +107,8 @@ tr{
 
   }
 .cat{
+  img {max-width: 100px;
+  }
 border-image: auto;
 }
 
