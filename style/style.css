@@ -102,7 +102,7 @@ tr{
   .container{ display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto ;
     grid-gap: 10px;
-    hight: 10000px;
+    height: 10000px;
 
   }
 .cat{
