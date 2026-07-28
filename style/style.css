@@ -85,7 +85,7 @@ img:hover{
 
     /* Table header styling */
     .styled-table thead tr {
-      background-color: #000000;
+      background-color: #fefafa;
       color: #ffffff;
       text-align: left;
     }
@@ -98,7 +98,7 @@ img:hover{
 
     /* Zebra striping for improved scanning readability */
     .styled-table tbody tr:nth-child(even) {
-      background-color: #0f0f0f;
+      background-color: #fbf5f5;
     }
 
     /* Bottom border highlight for the final row */
@@ -108,7 +108,10 @@ img:hover{
 
     /* Visual feedback on row hover */
     .styled-table tbody tr:hover {
-      background-color: #040404;
+      background-color: #f2eeee;
+      th { color:lightblue; 
+  font-family: 'comic sans ms';
+  font-size: 50px;}
     }
    p { color:lightblue; 
   font-family: 'comic sans ms';
