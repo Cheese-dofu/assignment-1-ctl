@@ -20,8 +20,17 @@
 <button onclick="checkInput()">Submit</button>
 
 <h1 id="result"></h1>
+<p id="text-element">This text will change color.</p>
+
 
 <script>
+    function changeColor() {
+  // 1. Select the element using its ID
+  const element = document.getElementById("text-element");
+  
+  // 2. Change the color property to any valid CSS color
+  element.style.color = "white"; 
+}
   // 1. Select the element using its ID
   const element = document.getElementById("text-element");
   
