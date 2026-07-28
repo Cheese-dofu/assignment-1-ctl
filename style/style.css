@@ -107,3 +107,12 @@ img:hover{
    p { color:lightblue; 
   font-family: 'comic sans ms';
   font-size: 50px;}
+  @keyframes run{
+    0%{
+      left:-160px;
+      transform: translateY(0)
+    }
+    25%{ 
+      transform: translateY(-10px);
+    }
+  }

@@ -16,50 +16,30 @@
      <link rel="stylesheet" href="forum.js"></link>
  </head>
  <body>
-    <input type="text" id="userInput" placeholder="Type something">
-<button onclick="checkInput()">Submit</button>
 
-<h1 id="result"></h1>
-<p id="text-element">This text will change color.</p>
+ <h1>Home:3</h1>
+ <h2>This the home page please click on the images below to go to each page </h2>
+ 
+ <style>
+    body{margin: 0;
+    overflow:hidden;}
+    .unicorn { position:absolute;
+        width: 150px;
+        bottom:15px;
+        left:-160;
+        animation: run 8s linear infinte;
 
-
-<script>
-    function changeColor() {
-  // 1. Select the element using its ID
-  const element = document.getElementById("text-element");
-  
-  // 2. Change the color property to any valid CSS color
-  element.style.color = "white"; 
-}
-  // 1. Select the element using its ID
-  const element = document.getElementById("text-element");
-  
-
-// Show saved response when the page loads
-window.onload = function () {
-    let saved = localStorage.getItem("savedResponse");
-    if (saved) {
-        document.getElementById("result").textContent = saved;
     }
-};
-
-function checkInput() {
-    let input = document.getElementById("userInput").value;
-    let response = "";
-
-    if (input.toLowerCase() === "pink-fluffy-unicorn") {
-        response = "dancing on rainbows!";
-    } else {
-        response = "";
+    @keyframes run{
+        0%{
+            left: -160;
+        
+        }
+        100%{ left: calc(100vw + 160px);}
     }
-
-    // Show response
-    document.getElementById("result").textContent = response;
-
-    // Save response in browser
-    localStorage.setItem("savedResponse", response);
-}
-</script>
+ </style>
+ <body>
+  <img src="<img src="https://media.tenor.com/xq2Z_Df0powAAAAM/my-little-pony-pink-fluffy-unicorns.gif" alt=""/>" class=""unicorn" alt="running unicorn">
   
 </body>
 </html>
