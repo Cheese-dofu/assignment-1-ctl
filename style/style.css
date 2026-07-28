@@ -130,7 +130,7 @@ img:hover{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   grid-auto-rows: 50px;
-  gap: 20px; /* Spacing between photos */
+  gap: 30px; /* Spacing between photos */
   padding: 10px;
   max-width: 1000px;
   margin: 0 auto;
@@ -141,7 +141,7 @@ img:hover{
   width: 300%;
   height: 400%;
   object-fit: cover; /* Prevents image distortion */
-  border-radius: 8px;
+  border-radius: 10px;
   transition: transform 0.3s ease;
 }
 
