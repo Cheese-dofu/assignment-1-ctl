@@ -1,5 +1,6 @@
 window.onload = () => {
     console.log('hi');
+    addPreview('Amphibians', 'https://undergroundreptiles.com/wp-content/uploads/2024/05/ug_Mountain_Chicken_Frog_4.jpg');
 }
 
 let mousePosX;
