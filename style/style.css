@@ -116,3 +116,40 @@ img:hover{
       transform: translateY(-10px);
     }
   }
+  .collage-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-auto-rows: 150px;
+  gap: 10px; /* Spacing between photos */
+  padding: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.collage-item img {
+  width: 50%;
+  height: 75%;
+  object-fit: cover; /* Prevents image distortion */
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.collage-item img:hover {
+  transform: scale(1.02);
+}
+
+/* Layout definitions using grid spanning */
+.large-rect {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.vertical-tall {
+  grid-row: span 2;
+}
+
+.horizontal-wide {
+  grid-column: span 2;
+}
