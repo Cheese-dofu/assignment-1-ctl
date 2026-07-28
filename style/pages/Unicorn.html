@@ -8,61 +8,46 @@
             <a href="../indext.html">home</a>
             <a href="Endagerdanimal.html">Endangerd species</a>
             <a href="page3.html">Spca</a>
-           <a href="Unicorn.html">Art</a>
+           <a href="Unicorn.html">Unicorn Human art vs Ai unicorn Art</a>
            
         </ul>
     </nav>
-   </nav>
-    <meta charset="utf/8">
-    <title>Unicorn</title>
-    <link rel="stylesheet" href="../style copy.css"></link>
-    
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 30px;
-        }
-
-        textarea {
-            width: 100%;
-            max-width: 600px;
-            height: 200px;
-        }
-
-        button {
-            margin-top: 10px;
-            padding: 10px 20px;
-        }
+   <title> Ai Art vs Human Art</title>
+      <style>
+        body { font-family: sans-serif; margin: 40px; }
+        .container { max-width: 400px; }
+        input[type="text"] { width: 100%; padding: 10px; margin-bottom: 10px; }
+        button { padding: 10px 15px; cursor: pointer; }
     </style>
 </head>
 <body>
 
-<h1>How Do you feel about Ai,or Ai are type how you feel below</h1>
-
-<textarea id="notes" placeholder="Write your private notes here..."></textarea>
-<br>
-<button onclick="saveNotes()">Save Notes</button>
-
-<p id="status"></p>
+<div class="container">
+    <label for="answerField">Type your answer:</label>
+    <!-- 1. The HTML Text Box -->
+    <input type="text" id="answerField" placeholder="Your answer will be saved...">
+    
+    <!-- 2. The Save Button -->
+    <button onclick="saveAnswer()">Save Answer</button>
+</div>
 
 <script>
-const notes = document.getElementById("notes");
-const status = document.getElementById("status");
+    // 3. Load the saved answer when the page opens
+    window.onload = function() {
+        const savedValue = localStorage.getItem("userAnswer");
+        if (savedValue) {
+            document.getElementById("answerField").value = savedValue;
+        }
+    };
 
-// Load saved notes when the page opens
-window.onload = function () {
-    const saved = localStorage.getItem("privateNotes");
-    if (saved) {
-        notes.value = saved;
+    // 4. Save the answer to the browser's memory
+    function saveAnswer() {
+        const inputField = document.getElementById("answerField");
+        localStorage.setItem("userAnswer", inputField.value);
+        alert("Answer saved successfully!");
     }
-};
-
-// Save notes
-function saveNotes() {
-    localStorage.setItem("privateNotes", notes.value);
-    status.textContent = "Notes saved!";
-}
 </script>
+
 
 </body>
 </html>
