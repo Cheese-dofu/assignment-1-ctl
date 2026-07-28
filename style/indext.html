@@ -22,8 +22,12 @@
 <p id="result"></p>
 
 <script>
-
-    document.getElementById("myText").style.color = "blue";
+  // 1. Select the element using its ID
+  const element = document.getElementById("text-element");
+  
+  // 2. Change the color property to any valid CSS color
+  element.style.color = "white"; 
+}
 // Show saved response when the page loads
 window.onload = function () {
     let saved = localStorage.getItem("savedResponse");
