@@ -38,7 +38,36 @@
 
     .unicorn {
         position: absolute;
-        top: 0%;
+        top: 5%;
+        font-size: 80px;
+        animation: run 6s linear infinite;
+        transform: translateY(-50%);
+    }
+
+    @keyframes run {
+        0% {
+            left: -120px;
+            transform: translateY(-50%) scaleX(1);
+        }
+        49% {
+            transform: translateY(-50%) scaleX(1);
+        }
+        50% {
+            left: calc(100% + 120px);
+            transform: translateY(-50%) scaleX(-1);
+        }
+        99% {
+            transform: translateY(-50%) scaleX(-1);
+        }
+        100% {
+            left: -120px;
+            transform: translateY(-50%) scaleX(1);
+        }
+    }
+
+    .duck {
+        position: absolute;
+        top: 95%;
         font-size: 80px;
         animation: run 6s linear infinite;
         transform: translateY(-50%);
@@ -66,7 +95,7 @@
     }
 </style>
   <img src="https://media.tenor.com/xq2Z_Df0powAAAAM/my-little-pony-pink-fluffy-unicorns.gif" class="unicorn" alt="running unicorn">
-  
+><img src="https://media.tenor.com/7zKZuIk31GEAAAAM/bird-dance.gif" class="duck" alt="running unicorn">
 </body>
 </html>
  
