@@ -137,29 +137,9 @@ img:hover{
 }
 
 
-.collage-item img {
-  width: 300%;
-  height: 400%;
-  object-fit: cover; /* Prevents image distortion */
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-/* Hover effect */
-.collage-item img:hover {
-  transform: scale(1.02);
-}
-
-/* Layout definitions using grid spanning */
-.large-rect {
-  grid-column: span 3;
-  grid-row: span 3;
-}
-
-.vertical-tall {
-  grid-row: span 3;
-}
-
-.horizontal-wide {
-  grid-column: span 3;
+.grid-container {
+  display: grid; /* Activates the grid layout context */
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
+  grid-template-rows: auto; /* Rows scale automatically based on content */
+  gap: 20px; /* Adds 20px spacing between all rows and columns */
 }
