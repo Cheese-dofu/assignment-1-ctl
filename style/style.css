@@ -115,6 +115,16 @@ img:hover{
     25%{ 
       transform: translateY(-10px);
     }
+     50%{
+      left:-160px;
+      transform: translateY(0)
+    }
+    75%{ 
+      transform: translateY(-10px);
+    }
+    100%{left:calc(100vw+160px);
+    transform:translateY(0);}
+    
   }
   .collage-container {
   display: grid;
