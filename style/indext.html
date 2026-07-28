@@ -16,52 +16,37 @@
      <link rel="stylesheet" href="forum.js"></link>
  </head>
  <body>
-    <h1>Current Time</h1>
-<h1 id="clock"></h1>
+    <input type="text" id="userInput" placeholder="Type something">
+<button onclick="checkInput()">Submit</button>
+
+<p id="result"></p>
 
 <script>
-function updateTime() {
-    const now = new Date();
-    document.getElementById("clock").textContent = now.toLocaleTimeString();
-}
-
-// Update immediately
-updateTime();
-
-// Update every second
-setInterval(updateTime, 1000);
-</script>
-
-   
-<h2>Type one fo these into a text box:pink-fluffy-unicorn</h2>
-
-<textarea id="note" rows="8" cols="50" placeholder="Write your note here..."></textarea>
-<br><br>
-
-<button onclick="saveNote()">Save</button>
-
-<script>
-const note = document.getElementById("note");
-
-// Load saved note when the page opens
-note.value = localStorage.getItem("myPrivateNote") || "";
-
-// Save the note
-function saveNote() {
-    localStorage.setItem("myPrivateNote", note.value);
-    alert("Note saved!");
-}
-let isLoggedIn = true; // Your condition
-
-    // If-then logic
-    if (pink-fluffy-unicorn) {
-      document.getElementById("pink-fluffy-unicor").innerText = "Welcome back, User!";
-    } else {
-      document.getElementById("pink-fluffy-unicor").innerText = "Please log in.";
+// Show saved response when the page loads
+window.onload = function () {
+    let saved = localStorage.getItem("savedResponse");
+    if (saved) {
+        document.getElementById("result").textContent = saved;
     }
-</script>
+};
 
-    
+function checkInput() {
+    let input = document.getElementById("userInput").value;
+    let response = "";
+
+    if (input.toLowerCase() === "pink-fluffy-unicorn") {
+        response = "dancing on rainbows!";
+    } else {
+        response = "";
+    }
+
+    // Show response
+    document.getElementById("result").textContent = response;
+
+    // Save response in browser
+    localStorage.setItem("savedResponse", response);
+}
+</script>
   
 </body>
 </html>
