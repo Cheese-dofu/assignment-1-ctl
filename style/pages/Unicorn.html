@@ -14,10 +14,12 @@
     </nav>
    <title> Ai Art vs Human Art</title>
       <style>
-        body { font-family: sans-serif; margin: 40px; }
+        body { font-family: sans-serif; margin: 40px;
+        background-color: black; }
         .container { max-width: 400px; }
         input[type="text"] { width: 100%; padding: 10px; margin-bottom: 10px; }
         button { padding: 10px 15px; cursor: pointer; }
+        
     </style>
 </head>
 <body>
@@ -45,6 +47,7 @@
         const inputField = document.getElementById("answerField");
         localStorage.setItem("userAnswer", inputField.value);
         alert("Answer saved successfully!");
+        
     }
 </script>
 
