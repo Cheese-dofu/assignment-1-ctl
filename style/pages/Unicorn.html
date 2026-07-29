@@ -59,6 +59,14 @@ const quiz =[
   question:"Is this image ai?", 
   answer: "Yes",
 },
+{ 
+  question:"Is this image ai?", 
+  answer: "Yes",
+},
+{ 
+  question:"Is this image ai?", 
+  answer: "No",
+},
 ];
 let currentQuestion = 0;
 let score = 0;
@@ -70,11 +78,18 @@ window.onload = () => {
 
 let img;
 
+const imgLinks = [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgEVDhbfBjFAkacOPSh5JqVOrJzuT0vwojUgPPC8kgULJCixPOZzd-Kb4&s=10",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ8eqHSs-E2psBm3hpdAoI4qWUXXOoabXfVjykL3pzQg&s=10",
+    "https://preview.redd.it/fully-ai-generated-capybara-3d-model-tinkered-in-slicer-v0-sv7a5n07ufce1.jpg?width=2048&format=pjpg&auto=webp&s=8561befbdd1c847437ffa8a5cc7f3747b8490863",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRedVKPunFPLo_zn-vkqFEkshaOtr6l_gDKobZXtTgI1A&s=10",
+]
+
 function showQuestion() {
     document.getElementById("question").innerHTML =
         quiz[currentQuestion].question;
     img = document.createElement('img');
-    img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgEVDhbfBjFAkacOPSh5JqVOrJzuT0vwojUgPPC8kgULJCixPOZzd-Kb4&s=10";
+    img.src = imgLinks[currentQuestion];
     document.getElementById('question').appendChild(img);
 }
 
