@@ -112,3 +112,6 @@ tr{
 border-image: auto;
 }
 
+body {
+    cursor: url("") 16 16, auto;
+}
