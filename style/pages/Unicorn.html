@@ -59,7 +59,9 @@ const quiz =[
 let currentQuestion = 0;
 let score = 0;
 
-showQuestion();
+window.onload = () => {
+    showQuestion();
+}
 
 function showQuestion() {
     let img = document.createElement('img');
