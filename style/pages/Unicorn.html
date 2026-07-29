@@ -42,7 +42,7 @@
    <a href="page3.html"><img src="../assets/1000009475.jpg">Spca page</a>
     </nav>
     <h1>Which image is ai</h1>
-<h2 id="question"></h2>
+<div id="question"></div>
 <button onclick="checkAnswer('Yes')">Yes</button>
 <button onclick="checkAnswer('No')">No</button>
 
@@ -68,7 +68,7 @@ function showQuestion() {
     let img = document.createElement('img');
     img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgEVDhbfBjFAkacOPSh5JqVOrJzuT0vwojUgPPC8kgULJCixPOZzd-Kb4&s=10";
     document.querySelector('#question').appendChild(img);
-    document.getElementById("question").textContent =
+    document.getElementById("question").innerHTML =
         quiz[currentQuestion].question;
 }
 
