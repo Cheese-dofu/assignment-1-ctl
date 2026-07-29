@@ -113,5 +113,5 @@ border-image: auto;
 }
 
 body {
-    cursor: url("../assets/cat-removebg-preview.png") 16 16, auto;
+    cursor: url("../assets/cat-removebg-preview.png"), auto;
 }
