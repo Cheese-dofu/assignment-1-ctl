@@ -64,10 +64,12 @@ window.onload = () => {
     console.log('test');
 }
 
+let img;
+
 function showQuestion() {
     document.getElementById("question").innerHTML =
         quiz[currentQuestion].question;
-    let img = document.createElement('img');
+    img = document.createElement('img');
     img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgEVDhbfBjFAkacOPSh5JqVOrJzuT0vwojUgPPC8kgULJCixPOZzd-Kb4&s=10";
     document.getElementById('question').appendChild(img);
 }
