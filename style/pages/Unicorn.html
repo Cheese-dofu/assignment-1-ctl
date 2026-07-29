@@ -52,9 +52,6 @@
 const quiz =[
    
   { 
-  let img=document.('img');
-  img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAU1mpidCivrrRBYqdOqJZXjyocI_oYFJhH7732VS4Qw7lOXT8KmHwetOe&s=10";
-  document.querySelector('#duck').appendChild(img);
   question:"Is this image ai?", 
   answer: "No",
 },
@@ -65,6 +62,9 @@ let score = 0;
 showQuestion();
 
 function showQuestion() {
+    let img = document.createElement('img');
+    img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgEVDhbfBjFAkacOPSh5JqVOrJzuT0vwojUgPPC8kgULJCixPOZzd-Kb4&s=10";
+    document.querySelector('#question').appendChild(img);
     document.getElementById("question").textContent =
         quiz[currentQuestion].question;
 }
