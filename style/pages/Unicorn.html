@@ -65,11 +65,11 @@ window.onload = () => {
 }
 
 function showQuestion() {
-    let img = document.createElement('img');
-    img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgEVDhbfBjFAkacOPSh5JqVOrJzuT0vwojUgPPC8kgULJCixPOZzd-Kb4&s=10";
-    document.querySelector('#question').appendChild(img);
     document.getElementById("question").innerHTML =
         quiz[currentQuestion].question;
+    let img = document.createElement('img');
+    img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgEVDhbfBjFAkacOPSh5JqVOrJzuT0vwojUgPPC8kgULJCixPOZzd-Kb4&s=10";
+    document.getElementById('question').appendChild(img);
 }
 
 function checkAnswer(choice) {
